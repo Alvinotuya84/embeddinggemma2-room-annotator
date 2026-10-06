@@ -1,0 +1,12 @@
+# Must match the ExecuTorch runtime bundled in react-native-executorch 0.10.x (v1.4.1):
+# a .pte from a newer ExecuTorch is not guaranteed to load on an older runtime.
+executorch==1.4.1
+# The torch version ExecuTorch 1.4.1's Python bindings are built against.
+torch==2.13.0
+# Gemma's image processor resizes with torchvision, which must match torch exactly.
+torchvision==0.28.0
+torchao==0.18.0
+transformers>=5.19
+sentence-transformers>=6.1
+pillow
+numpy
